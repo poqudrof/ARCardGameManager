@@ -112,3 +112,6 @@ exports
 *.cache
 build
 .strapi-updater.json
+
+## Ingnored for Heroku following Strapi tutorial.
+package-lock.json
