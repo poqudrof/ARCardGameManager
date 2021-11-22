@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/card-roles",
+      "handler": "card-role.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/card-roles/count",
+      "handler": "card-role.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/card-roles/:id",
+      "handler": "card-role.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/card-roles",
+      "handler": "card-role.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/card-roles/:id",
+      "handler": "card-role.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/card-roles/:id",
+      "handler": "card-role.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "kind": "collectionType",
+  "collectionName": "decks",
+  "info": {
+    "name": "Deck"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "uuid": {
+      "type": "uid"
+    },
+    "cards": {
+      "via": "deck",
+      "collection": "card"
+    }
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "kind": "collectionType",
+  "collectionName": "cards",
+  "info": {
+    "name": "Card",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "card_id": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "answer": {
+      "type": "string"
+    },
+    "number_in_role": {
+      "type": "integer"
+    },
+    "lines": {
+      "via": "card",
+      "collection": "line"
+    },
+    "deck": {
+      "via": "cards",
+      "model": "deck"
+    },
+    "card_role": {
+      "model": "card-role"
+    },
+    "tip": {
+      "type": "string"
+    }
+  }
+}

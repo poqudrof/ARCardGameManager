@@ -1,0 +1,28 @@
+{
+  "kind": "collectionType",
+  "collectionName": "card_roles",
+  "info": {
+    "name": "card role",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "deck": {
+      "model": "deck"
+    },
+    "short_name": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    }
+  }
+}

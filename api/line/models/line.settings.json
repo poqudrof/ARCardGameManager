@@ -1,0 +1,22 @@
+{
+  "kind": "collectionType",
+  "collectionName": "lines",
+  "info": {
+    "name": "Line"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "line": {
+      "type": "string"
+    },
+    "card": {
+      "via": "lines",
+      "model": "card"
+    }
+  }
+}
