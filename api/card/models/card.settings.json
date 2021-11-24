@@ -17,10 +17,6 @@
       "required": true,
       "unique": true
     },
-    "title": {
-      "type": "string",
-      "required": true
-    },
     "answer": {
       "type": "string"
     },
@@ -39,6 +35,9 @@
       "model": "card-role"
     },
     "tip": {
+      "type": "string"
+    },
+    "card_type": {
       "type": "string"
     }
   }
