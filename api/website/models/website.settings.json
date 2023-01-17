@@ -1,0 +1,24 @@
+{
+  "kind": "singleType",
+  "collectionName": "websites",
+  "info": {
+    "name": "website"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "introduction": {
+      "type": "richtext"
+    },
+    "title": {
+      "type": "string"
+    },
+    "metaDescription": {
+      "type": "string"
+    }
+  }
+}
